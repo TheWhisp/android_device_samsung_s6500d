@@ -21,7 +21,7 @@ include device/samsung/msm7x27a-common/BoardConfigCommon.mk
 TARGET_BOOTLOADER_BOARD_NAME := jenad
 
 ## Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_jenad_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod/jenad_defconfig
 
 ## Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/jenad/bluetooth
