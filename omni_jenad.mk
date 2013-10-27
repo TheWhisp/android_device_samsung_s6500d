@@ -12,17 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+# Add omni APNs
+PRODUCT_COPY_FILES += \
+       vendor/omni/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-## Inherit common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from our omni product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
 
 ## Inherit device files
-$(call inherit-product, device/samsung/jenad/jenad.mk)
+$(call inherit-product, device/samsung/jenad/device_jenad.mk)
 
 ## Setup device configuration
-PRODUCT_NAME := cm_jenad
+PRODUCT_NAME := omni_jenad
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := GT-S6500D
