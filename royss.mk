@@ -29,4 +29,4 @@ PRODUCT_COPY_FILES += \
     device/samsung/jena/rootdir/init-cwm.rle:root/GT-S6500.rle
 endif
 
-$(call inherit-product, vendor/samsung/jena/blobs.mk)
+#$(call inherit-product, vendor/samsung/jena/blobs.mk) - for nfc

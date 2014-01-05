@@ -19,15 +19,15 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 ## Inherit device files
-$(call inherit-product, device/samsung/jenad/jenad.mk)
+$(call inherit-product, device/samsung/royss/royss.mk)
 
 ## Setup device configuration
-PRODUCT_NAME := cm_jenad
+PRODUCT_NAME := cm_royss
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := GT-S6500D
-PRODUCT_RELEASE_NAME := GT-S6500D
-PRODUCT_DEVICE := jenad
+PRODUCT_MODEL := GT-S6310
+PRODUCT_RELEASE_NAME := GT-S6310
+PRODUCT_DEVICE := royss
 
 ## Bootanimation
 TARGET_SCREEN_HEIGHT := 480
