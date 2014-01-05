@@ -18,13 +18,13 @@
 include device/samsung/msm7x27a-common/BoardConfigCommon.mk
 
 ## Platform
-TARGET_BOOTLOADER_BOARD_NAME := jenad
+TARGET_BOOTLOADER_BOARD_NAME := royss
 
 ## Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod/jenad_defconfig
+TARGET_KERNEL_CONFIG := royss_defconfig
 
 ## Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/jenad/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/royss/bluetooth
 
 ## OTA assert
-TARGET_OTA_ASSERT_DEVICE := jena,jenad,GT-S6500,GT-S6500D
+#TARGET_OTA_ASSERT_DEVICE := jena,jenad,GT-S6500,GT-S6500D
